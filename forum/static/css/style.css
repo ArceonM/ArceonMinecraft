@@ -1,0 +1,429 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+ }
+
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    background: url(../images/Arceon_bg.png) no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 1080px;
+}
+
+.navbar{
+    font-size: 18px!important;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.logo{
+    background: url(../images/Arceon_title1.png) no-repeat;
+    background-size: 170px 70px;
+    width: 170px;
+    height: 70px;
+    position: absolute;
+    margin: 0px 0px 0px 255px;
+    transition: 0.1s;
+}
+
+.logo:hover{
+    background: url(../images/Arceon_title2.png) no-repeat;
+    background-size: 170px 70px;
+    width: 170px;
+    height: 70px;
+    position: absolute;
+    margin: 0px 0px 0px 255px;
+}
+
+.Home{
+    font-family: system-ui;
+    font-weight: 645;
+    color: #656565;
+    text-decoration: none;
+    position: absolute;
+    margin: 25px 0px 0px 625px;
+    transition: 0.1s;
+}
+
+.Home:hover{
+    font-family: system-ui;
+    font-weight: 645;
+    color: #cecece;
+    text-decoration: none;
+    position: absolute;
+    margin: 25px 0px 0px 625px;
+}
+
+.Servers{
+    font-family: system-ui;
+    font-weight: 645;
+    color: #656565;
+    text-decoration: none;
+    position: absolute;
+    margin: 25px 0px 0px 745px;
+    transition: 0.1s;
+}
+
+.Servers:hover{
+    font-family: system-ui;
+    font-weight: 645;
+    color: #cecece;
+    text-decoration: none;
+    position: absolute;
+    margin: 25px 0px 0px 745px;
+}
+
+.Shop{
+    font-family: system-ui;
+    font-weight: 645;
+    color: #656565;
+    text-decoration: none;
+    position: absolute;
+    margin: 25px 0px 0px 925px;
+    transition: 0.1s;
+}
+
+.Shop:hover{
+    font-family: system-ui;
+    font-weight: 645;
+    color: #cecece;
+    text-decoration: none;
+    position: absolute;
+    margin: 25px 0px 0px 925px;
+}
+
+.Donate{
+    font-family: system-ui;
+    font-weight: 645;
+    color: #656565;
+    text-decoration: none;
+    position: absolute;
+    margin: 25px 0px 0px 1060px;
+    transition: 0.1s;
+}
+
+.Donate:hover{
+    font-family: system-ui;
+    font-weight: 645;
+    color: #cecece;
+    text-decoration: none;
+    position: absolute;
+    margin: 25px 0px 0px 1060px;
+}
+
+.Login{
+    font-family: system-ui;
+    font-weight: 645;
+    color: #656565;
+    text-decoration: none;
+    position: absolute;
+    margin: 25px 0px 0px 1285px;
+}
+
+.Start{
+    font-size: 18px!important;
+    border-radius: 5px;
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    background: radial-gradient(circle, rgba(251,230,63,1) 0%, rgba(252,210,70,1) 100%);
+    height: 36px;
+    width: 175px;
+    font-family: system-ui;
+    font-weight: 645;
+    color: #ffffff;
+    text-decoration: none;
+    position: absolute;
+    margin: 18px 0px 0px 1440px;
+}
+
+.text-only{
+    font-family: system-ui;
+    font-weight: 645;
+    color: #656565;
+    text-decoration: none;
+    position: absolute;
+    margin: 500px 0px 0px 750px;
+}
+
+.launcher-download-btn{
+    font-size: 20px!important;
+    border-radius: 10px;
+    padding: 15px 0px 0px 0px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(223,205,64,1) 0%, rgba(222,185,64,1) 100%);
+    height: 70px;
+    width: 400px;
+    font-family: system-ui;
+    font-weight: 645;
+    color: #ffffff;
+    text-decoration: none;
+    position: absolute;
+    margin: 20px 0px 0px 75px;
+    transition: 0.1s
+}
+
+.launcher2{
+    padding: 0px 0px 0px 0px;
+    color: #ff9500;
+    font-size: 15px!important;
+}
+
+.desc{
+    position: absolute;
+    margin: 300px 0px 0px 255px;
+}
+
+.desc-t1{
+    padding: 0px 0px 0px 150px;
+    width: 400px;
+    font-weight: 700;
+    font-size: 70px!important;
+    font-family: system-ui;
+    color: #212529;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(223,205,64,1);
+}
+
+.desc-t2{
+    line-height: 30px;
+    margin: 15px 0px;
+    font-weight: 500;
+    font-size: 20px!important;
+    font-family: system-ui;
+    color: #212529;
+    text-decoration: none;
+}
+
+.scene{
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(101,101,101,1) 0%, rgba(33,37,41,1) 75%);
+    position: absolute;
+    margin: 250px 0px 0px 1050px;
+}
+
+.scene-img{
+    margin: 20px 0px 0px 25px;
+}
+
+.log-username-box{
+    border-radius: 2px;
+    margin: 100px 20px 20px 18px;
+    position: absolute;
+    height: 54px;
+    width: 216px;
+    background-color: rgba(222,185,64,1);
+}
+
+.login{
+    margin: 325px 0px 0px 720px;
+}
+
+.log-text-box{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 645;
+    font-family: system-ui;
+    background-color: rgba(222,185,64,1);
+    outline-color: rgba(222,185,64,1);
+    border-color: rgba(222,185,64,1);
+    height: 64px;
+    width: 250px;
+    position: absolute;
+    margin: 0px 20px 20px 0px;
+}
+
+.log-text{
+    margin: 18px 0px 0px 97px;
+}
+
+.log-username-icon{
+    margin: 17.5px 0px 0px 6px;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+}
+
+.log-username{
+    margin: 17px 0px 0px 25px;
+    position: absolute;
+    background-color: rgba(222,185,64,1);
+    outline: 0px !important;
+    outline-color: rgba(222,185,64,1);
+    border-color: rgba(222,185,64,1);
+}
+
+.log-password-box{
+    border-radius: 2px;
+    margin: 160px 20px 20px 18px;
+    position: absolute;
+    height: 54px;
+    width: 216px;
+    background-color: rgba(222,185,64,1);
+}
+
+.log-password-icon{
+    margin: 17.5px 0px 0px 6px;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+}
+
+.log-password{
+    margin: 17px 0px 0px 25px;
+    position: absolute;
+    background-color: rgba(222,185,64,1);
+    outline: 0px !important;
+    outline-color: rgba(222,185,64,1);
+    border-color: rgba(222,185,64,1);
+}
+
+.log-sbm-btn{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 645;
+    font-family: system-ui;
+    background-color: rgba(222,185,64,1);
+    outline-color: rgba(222,185,64,1);
+    border-color: rgba(222,185,64,1);
+    height: 54px;
+    width: 216px;
+    position: absolute;
+    margin: 240px 20px 20px 18px;
+}
+
+.reg-Email-box{
+    border-radius: 2px;
+    margin: 160px 20px 20px 18px;
+    position: absolute;
+    height: 54px;
+    width: 216px;
+    background-color: rgba(222,185,64,1);
+}
+
+.reg-Email-icon{
+    margin: 17.5px 0px 0px 6px;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+}
+
+.reg-Email{
+    margin: 17px 0px 0px 25px;
+    position: absolute;
+    background-color: rgba(222,185,64,1);
+    outline: 0px !important;
+    outline-color: rgba(222,185,64,1);
+    border-color: rgba(222,185,64,1);
+}
+
+.reg-password1-box{
+    border-radius: 2px;
+    margin: 220px 20px 20px 18px;
+    position: absolute;
+    height: 54px;
+    width: 216px;
+    background-color: rgba(222,185,64,1);
+}
+
+.reg-password1-icon{
+    margin: 17.5px 0px 0px 6px;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+}
+
+.reg-password1{
+    margin: 17px 0px 0px 25px;
+    position: absolute;
+    background-color: rgba(222,185,64,1);
+    outline: 0px !important;
+    outline-color: rgba(222,185,64,1);
+    border-color: rgba(222,185,64,1);
+}
+
+.reg-password2-box{
+    border-radius: 2px;
+    margin: 280px 20px 20px 18px;
+    position: absolute;
+    height: 54px;
+    width: 216px;
+    background-color: rgba(222,185,64,1);
+}
+
+.reg-password2-icon{
+    margin: 17.5px 0px 0px 6px;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+}
+
+.reg-password2{
+    margin: 17px 0px 0px 25px;
+    position: absolute;
+    background-color: rgba(222,185,64,1);
+    outline: 0px !important;
+    outline-color: rgba(222,185,64,1);
+    border-color: rgba(222,185,64,1);
+}
+
+.reg-sbm-btn{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 645;
+    font-family: system-ui;
+    background-color: rgba(222,185,64,1);
+    outline-color: rgba(222,185,64,1);
+    border-color: rgba(222,185,64,1);
+    height: 54px;
+    width: 216px;
+    position: absolute;
+    margin: 360px 20px 20px 18px;
+}
+
+.reg-text-box{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 645;
+    font-family: system-ui;
+    background-color: rgba(222,185,64,1);
+    outline-color: rgba(222,185,64,1);
+    border-color: rgba(222,185,64,1);
+    height: 64px;
+    width: 250px;
+    position: absolute;
+    margin: 0px 20px 20px 0px;
+}
+
+.reg-text{
+    margin: 18px 0px 0px 58px;
+}
+
+.registration{
+    margin: 285px 0px 0px 720px;
+}
+
+.log-error{
+    position: absolute;
+    margin: 200px;
+}
+
+.log-error-text{
+    position: absolute;
+}

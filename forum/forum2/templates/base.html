@@ -1,0 +1,48 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="{% static 'images/Arceon-Logo.png' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <title>Arceon</title>
+</head>
+<body>
+    {% block bg %}
+        <div class="bg">
+
+        </div>
+    {% endblock bg %}
+    {% block navbar %}
+        <div class="navbar">
+            <a class="logo" href="{% url 'forum:home' %}"></a>
+            <a href="{% url 'forum:home' %}" class="Home">Главная</a>
+            <a href="{% url 'forum:not_work' %}" class="Servers">Наши сервера</a>
+            <a href="{% url 'forum:not_work' %}" class="Shop">Магазин</a>
+            <a href="{% url 'forum:not_work' %}" class="Donate">Донат</a>
+            {% if user.is_authenticated %}
+                <a href="{% url 'forum:not_work' %}" class="Login">{{ user }}</a>
+                <a href="{% url 'forum:not_work' %}" class="Start">КАБИНЕТ</a>
+            {% else %}
+                <a href="{% url 'forum:login' %}" class="Login">Войти на сайт</a>
+                <a href="{% url 'forum:register' %}" class="Start">НАЧАТЬ ИГРАТЬ</a>
+            {% endif %}
+
+        </div>
+    {% endblock navbar %}
+    {% block main %}
+        <div class="desc">
+            <h1 class="desc-t1">Arceon</h1>
+            <p class="desc-t2">Arceon-это проект по майнкрафту в жанре фэнтези, <br> фишкой Arceon являются моды написанные с нуля,
+                <br>  так же в  Arceon своя карта мира которая тоже была создана <br> с нуля. <br> Мечи, магия, луки, все это есть на нашем проекте Arceon!</p>
+            <a href="{% url 'forum:not_work' %}" class="launcher-download-btn"><b>СКАЧАТЬ ЛАУНЧЕР</b><br><b class="launcher2">начни играть прямо сейчас!</b></a>
+        </div>
+        <div class="scene">
+            <img class="scene-img" src="{% static 'images/Arceon_scene_var3.png' %}" alt="">
+        </div>
+    {% endblock main %}
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

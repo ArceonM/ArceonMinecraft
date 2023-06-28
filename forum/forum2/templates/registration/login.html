@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+{% load widget_tweaks %}
+{% block content %}
+    <div class="login">
+        <form action="" method="post">
+            <div class="log-text-box">
+                <div class="log-text">
+                    ВХОД
+                </div>
+            </div>
+            <div class="log-username-box">
+                <div class="log-username-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                {% render_field form.username class="log-username" placeholder="Введите никнейм" %}
+            </div>
+            <div class="log-password-box">
+                <div class="log-password-icon">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                {% render_field form.password class="log-password" placeholder="Введите пароль" %}
+            </div>
+            {% csrf_token %}
+            <button class="log-sbm-btn" type="submit">Войти </button>
+        </form>
+        <script src="https://kit.fontawesome.com/826d1215f1.js" crossorigin="anonymous"></script>
+    </div>
+{% endblock content %}
+{% block main %}
+{% endblock main %}

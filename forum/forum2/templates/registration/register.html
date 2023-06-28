@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+{% load widget_tweaks %}
+{% block content %}
+    <div class="registration">
+        <form action="" method="post">
+            <div class="reg-text-box">
+                <div class="reg-text">
+                    РЕГИСТРАЦИЯ
+                </div>
+            </div>
+
+            <div class="log-username-box">
+                <div class="log-username-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                {% render_field form.username class="log-username" placeholder="Введите никнейм" %}
+            </div>
+
+            <div class="reg-Email-box">
+                <div class="reg-Email-icon">
+                    <i class="fa-solid fa-at"></i>
+                </div>
+                {% render_field form.email class="reg-Email" placeholder="Введите Email" %}
+            </div>
+
+            <div class="reg-password1-box">
+                <div class="reg-password1-icon">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                {% render_field form.password1 class="reg-password1" placeholder="Введите пароль" %}
+            </div>
+
+            <div class="reg-password2-box">
+                <div class="reg-password2-icon">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                {% render_field form.password2 class="reg-password2" placeholder="Повторите пароль" %}
+            </div>
+            {% csrf_token %}
+            <button class="reg-sbm-btn" type="submit">Зарегистрироваться </button>
+        </form>
+        <script src="https://kit.fontawesome.com/826d1215f1.js" crossorigin="anonymous"></script>
+    </div>
+{% endblock content %}
+{% block main %}
+{% endblock main %}
